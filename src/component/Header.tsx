@@ -1,14 +1,11 @@
-import React from 'react'
-import { Building2, MapPin} from 'lucide-react';
-import home3_img from './assets/home4_img.webp'
-import logo from './assets/centralparklogo.png'
-
+import React from 'react';
+import { MapPin } from 'lucide-react';
+import home3_img from './assets/home4_img.webp';
+import logo from './assets/centralparklogo.png';
 
 const Header = () => {
   return (
-    <>
-    {/* Hero Section */}
-     <header className="relative text-white overflow-hidden h-screen">
+    <header className="relative text-white overflow-hidden min-h-screen">
       {/* Background Image */}
       <div className="absolute inset-0 bg-cover bg-center">
         <img src={home3_img} alt="img" className="w-full h-full object-cover" />
@@ -16,12 +13,14 @@ const Header = () => {
       </div>
 
       {/* Navbar */}
-      <nav className="relative z-10 container mx-auto px-6 py-6 flex justify-between items-center">
-        <div className="flex items-center space-x-2">
-          <img src={logo} alt="Logo" width={40}  height={40}/>
-          <span className="text-2xl font-bold">Sector 104</span>
+      <nav className="relative z-10 container mx-auto px-4 sm:px-6 py-4 flex flex-wrap justify-between items-center">
+        <div className="flex items-center space-x-2 mb-4 sm:mb-0">
+          <img src={logo} alt="Logo" width={40} height={40} />
+          <span className="text-xl sm:text-2xl font-bold whitespace-nowrap">Sector 104</span>
         </div>
-        <div className="hidden md:flex space-x-8">
+
+        {/* Always visible links (wrap on small screens) */}
+        <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-sm sm:text-base font-medium">
           <a href="#overview" className="hover:text-white transition-colors">Overview</a>
           <a href="#features" className="hover:text-white transition-colors">Features</a>
           <a href="#amenities" className="hover:text-white transition-colors">Amenities</a>
@@ -31,31 +30,33 @@ const Header = () => {
       </nav>
 
       {/* Hero Section */}
-      <div className="relative z-10 container mx-auto px-6 py-24 md:py-32 flex flex-col md:flex-row items-start md:items-center justify-around gap-10">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 py-16 md:py-24 flex flex-col md:flex-row items-start md:items-center justify-around gap-10">
         
         {/* Left Content */}
-        <div className="max-w-2xl">
-          <div className="inline-flex items-center space-x-2 px-4 py-2 mb-6 bg-white/10 backdrop-blur-sm rounded-full">
-            <MapPin className="w-6 h-6 text-white" />
-            <span className="text-sm md:text-lg font-medium">
+        <div className="max-w-2xl text-center md:text-left">
+          <div className="inline-flex items-center justify-center md:justify-start space-x-2 px-4 py-2 mb-6 bg-white/10 backdrop-blur-sm rounded-full">
+            <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+            <span className="text-sm sm:text-lg font-medium">
               Prime Location in Sector 104
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-6 leading-tight">
             Your Dream Home <br />
             <span className="text-white">Awaits Here</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-gray-100 mb-8 leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-gray-100 mb-8 leading-relaxed">
             Discover premium residential properties in the heart of Sector 104.
             Modern living spaces designed for comfort, convenience, and luxury.
           </p>
         </div>
 
         {/* Right Form */}
-        <div className="bg-white/10 backdrop-blur-md p-6 md:p-8 rounded-2xl shadow-xl w-full max-w-sm md:max-w-md">
-          <h3 className="text-2xl font-semibold mb-6 text-center">Get in Touch</h3>
+        <div className="bg-white/10 backdrop-blur-md p-5 sm:p-6 md:p-8 rounded-2xl shadow-xl w-full max-w-md mx-auto md:mx-0">
+          <h3 className="text-xl sm:text-2xl font-semibold mb-6 text-center">
+            Get in Touch
+          </h3>
           <form className="flex flex-col space-y-4">
             <input
               type="text"
@@ -77,21 +78,15 @@ const Header = () => {
             />
             <button
               type="submit"
-              className="bg-white/50 hover:bg-white text-black font-semibold py-3 rounded-lg transition-all"
+              className="bg-white/60 hover:bg-white text-black font-semibold py-3 rounded-lg transition-all"
             >
               Submit
             </button>
           </form>
         </div>
       </div>
-
-      {/* Bottom Fade */}
-      {/* <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent"></div> */}
     </header>
+  );
+};
 
-      
-    </>
-  )
-}
-
-export default Header
+export default Header;
