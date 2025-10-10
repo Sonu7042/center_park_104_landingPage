@@ -6,6 +6,7 @@ import Header from './component/Header';
 import Overview from './component/Overview';
 import Location from './component/Location';
 import EnquiryButton from './component/EnquiryButton';
+import WhatsappButton from './component/WhatsappIcon';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Contact/>
 
       <EnquiryButton/>
+      <WhatsappButton/>
       
 
 
