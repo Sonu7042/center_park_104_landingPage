@@ -13,14 +13,15 @@ const Header = () => {
       </div>
 
       {/* Navbar */}
-      <nav className="relative z-10 container mx-auto px-4 sm:px-6 py-4 flex flex-wrap justify-between items-center">
-        <div className="flex items-center space-x-2 mb-4 sm:mb-0">
+      <nav className="relative z-10 container mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
+        {/* Logo Section */}
+        <div className="flex items-center space-x-2">
           <img src={logo} alt="Logo" width={40} height={40} />
           <span className="text-xl sm:text-2xl font-bold whitespace-nowrap">Sector 104</span>
         </div>
 
-        {/* Always visible links (wrap on small screens) */}
-        <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-sm sm:text-base font-medium">
+        {/* Menu Links — hidden on mobile */}
+        <div className="hidden md:flex space-x-8 font-medium">
           <a href="#overview" className="hover:text-white transition-colors">Overview</a>
           <a href="#features" className="hover:text-white transition-colors">Features</a>
           <a href="#amenities" className="hover:text-white transition-colors">Amenities</a>
