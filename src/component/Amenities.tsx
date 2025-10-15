@@ -17,7 +17,7 @@ const Amenities = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              'Swimming Pool',
+              'Temperature Swimming Pool',
               'Fitness Center',
               'Club House',
               'Children\'s Play Area',

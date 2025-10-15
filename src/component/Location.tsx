@@ -24,10 +24,12 @@ const Location = () => {
           {[
             { name: "IGI Airport & Aerocity", time: "15 Mins" },
             { name: "Railway Station", time: "10 Mins" },
-            { name: "Cambridge Montessori Gurgaon", time: "3 Mins" },
-            { name: "Delhi Public School Sector 103", time: "3 Mins" },
+            { name: "Cambridge Montessori Gurgaon", time: "0 Mins" },
+            { name: "Delhi Public School Sector 103", time: "0 Mins" },
             { name: "Gurugram Global Heights School", time: "8 Mins" },
             { name: "Vibrant Hospital", time: "6 Mins" },
+            { name: "AIIMS Hospital", time: "15 Mins" },
+            { name: "Global City", time: "10 Mins" },
           ].map((item, i) => (
             <div
               key={i}
@@ -47,7 +49,7 @@ const Location = () => {
         </div>
 
         {/* Right Google Map */}
-        <div className="w-full h-[400px] rounded-xl overflow-hidden shadow-lg">
+        <div className="w-full h-[580px] rounded-xl overflow-hidden shadow-lg">
           <iframe
             title="Central Park 104 Location Map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.13478393553!2d76.98097447537509!3d28.475487275750964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d17931d44cff5%3A0xfd71221b1775d65a!2sCentral%20Park%20Sector%20104!5e0!3m2!1sen!2sin!4v1760081135627!5m2!1sen!2sin"

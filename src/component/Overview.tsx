@@ -1,6 +1,6 @@
 import React from 'react'
 import { CheckCircle  } from 'lucide-react';
-import overview_img from './assets/overview_img2.webp'
+import overview_img from './assets/overview_img3.webp'
 
 
 const Overview = () => {
