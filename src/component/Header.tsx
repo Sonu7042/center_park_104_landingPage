@@ -1,6 +1,6 @@
 import React from 'react';
 import { MapPin } from 'lucide-react';
-import home3_img from './assets/home4_img.webp';
+import home3_img from './assets/banner2.jpg';
 import logo from './assets/centralparklogo.png';
 
 const Header = () => {
@@ -8,8 +8,8 @@ const Header = () => {
     <header className="relative text-white overflow-hidden min-h-screen">
       {/* Background Image */}
       <div className="absolute inset-0 bg-cover bg-center">
-        <img src={home3_img} alt="img" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-black/10"></div>
+        <img src={home3_img} alt="img" className="w-full h-full object-cover brightness-70" />
+        <div className="absolute inset-0 bg-black/"></div>
       </div>
 
       {/* Navbar */}
@@ -47,7 +47,7 @@ const Header = () => {
             <span className="text-white">Awaits Here</span>
           </h1>
 
-          <p className="text-base sm:text-lg md:text-xl text-gray-100 mb-8 leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-gray-50 mb-8 leading-relaxed">
             Discover premium residential properties in the heart of Sector 104.
             Modern living spaces designed for comfort, convenience, and luxury.
           </p>
