@@ -47,7 +47,7 @@ const Header = () => {
             <span className="text-white">Awaits Here</span>
           </h1>
 
-          <p className="text-base sm:text-lg md:text-xl text-gray-50 mb-8 leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl  text-black/100 mb-8 leading-relaxed bg-white/5 backdrop-blur-md p-5 rounded-2xl">
             Discover premium residential properties in the heart of Sector 104.
             Modern living spaces designed for comfort, convenience, and luxury.
           </p>
